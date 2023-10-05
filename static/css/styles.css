@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url("https://db.onlinewebfonts.com/t/0022ff9d57529db17ec53c67c7916611.eot");
+    src: url("https://db.onlinewebfonts.com/t/0022ff9d57529db17ec53c67c7916611.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/0022ff9d57529db17ec53c67c7916611.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/0022ff9d57529db17ec53c67c7916611.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/0022ff9d57529db17ec53c67c7916611.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/0022ff9d57529db17ec53c67c7916611.svg#CG Times Bold")format("svg");
+}
+
+@font-face {
+    font-family: "CGTimes";
+    src: url("https://db.onlinewebfonts.com/t/9685e3efc5a2270c6a47d201281ff08a.eot");
+    src: url("https://db.onlinewebfonts.com/t/9685e3efc5a2270c6a47d201281ff08a.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/9685e3efc5a2270c6a47d201281ff08a.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/9685e3efc5a2270c6a47d201281ff08a.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/9685e3efc5a2270c6a47d201281ff08a.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/9685e3efc5a2270c6a47d201281ff08a.svg#CG Times")format("svg");
+}
+
+@font-face {
+    font-family: "CG Times Bold Italic";
+    src: url("https://db.onlinewebfonts.com/t/969a11cce3ad9ece718d4e885a569f7b.eot");
+    src: url("https://db.onlinewebfonts.com/t/969a11cce3ad9ece718d4e885a569f7b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/969a11cce3ad9ece718d4e885a569f7b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/969a11cce3ad9ece718d4e885a569f7b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/969a11cce3ad9ece718d4e885a569f7b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/969a11cce3ad9ece718d4e885a569f7b.svg#CG Times Bold Italic")format("svg");
+}
+
+@font-face {
+    font-family: "CG Times kursiv";
+    src: url("https://db.onlinewebfonts.com/t/bbab35a5a71ac49d30f9fb888786cd36.eot");
+    src: url("https://db.onlinewebfonts.com/t/bbab35a5a71ac49d30f9fb888786cd36.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bbab35a5a71ac49d30f9fb888786cd36.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bbab35a5a71ac49d30f9fb888786cd36.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bbab35a5a71ac49d30f9fb888786cd36.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bbab35a5a71ac49d30f9fb888786cd36.svg#CG Times kursiv")format("svg");
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: boldFont;
+}
+
+.header img {
+    width: 190px;
+    height: auto;
+}
+
+.header h1 {
+    margin-left: 10px;
+    font-size: 38px;
+    margin-bottom: 1.7%;
+}
+
+.container {
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid black;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: boldFont;
+    font-size: 19px;
+}
+
+.container .group {
+    display: block;
+    border-bottom: 1px solid;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.container .group span {
+    font-family: CGTimes;
+}
+
+.container label {
+    display: block;
+    border-bottom: 1px solid;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.container label span {
+    font-family: CGTimes;
+}
+
+.container button {
+    border: none;
+    border-radius: 5px;
+    height: 28px;
+}
+
+.container button:hover {
+    color: white;
+    background-color: #69ac59;
+}
+
+.result_title {
+    font-family: boldFont;
+    font-size: 25px;
+    text-align: center;
+    margin: 13px auto;
+    border-bottom: 1px solid;
+    width: 65%;
+    height: 45px;
+}
+
+.result_title span {
+    font-family: "CG Times Bold Italic";
+}
+
+.no_result {
+    font-family: boldFont;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.item {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    width: 65%;
+    margin: 0 auto;
+    overflow: visible;
+    margin-top: 2px;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*.item img {*/
+/*    */
+/*}*/
+.item .pic{
+    /*float:left;*/
+    /*width:20%;*/
+    /*margin: 5%;*/
+    /*margin-left: 3%;*/
+    /*margin-right: 3%;*/
+    /*margin-top: 5%;*/
+    /*margin-bottom: 5%;*/
+    /*position: absolute;*/
+    /*z-index: 5;*/
+}
+.item .pic img {
+    float:left;
+    width:20%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    transition: transform 0.8s ease;
+    max-width: 100%;
+    /*position: absolute;*/
+    z-index: 5;
+}
+
+.item .pic img:hover {
+    transform: scale(2);
+    /*position: absolute;*/
+    z-index: 10;
+}
+.item .intro {
+    float: right;
+    width: 70%;
+    margin-top: 4%;
+}
+
+.item .intro .title {
+    font-family: boldFont;
+}
+
+.item .intro p {
+    font-family: "CGTimes";
+}
+
+.item .intro p span {
+    font-family: "CG Times kursiv";
+}
+
+#toggleView  {
+    border: none;
+    border-radius: 5px;
+    height: 28px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#toggleView:hover {
+    color: white;
+    background-color: #69ac59;
+}
+
+.top-icon {
+    height: 30px;
+    margin-left: 2px;
+    position: relative;
+    top: 10px;
+}
+
+.redirect-icon {
+    height: 13px;
+    margin-left: 2px;
+}
+
+#itemDetail {
+    text-align: center;
+}
+
+#itemDetail p {
+    font-family: boldFont;
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#backButton {
+    border: none;
+    border-radius: 5px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+#backButton:hover {
+    color: white;
+    background-color: #69ac59;
+}
+
+.itemDetailedContent table {
+    border-collapse: collapse;
+    width: 65%;
+    margin: auto;
+}
+
+.itemDetailedContent table tr td {
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+}
+
+.itemDetailedContent img {
+    max-height: 200px;
+    width: auto;
+}
+
+
+
+

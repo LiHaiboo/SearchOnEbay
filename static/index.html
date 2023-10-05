@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>eBay Shopping</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="https://www.ebay.com/" target="_blank"><img src="https://csci571.com/hw/hw6/images/eBayLogo.png"
+                alt="eBay Logo"></a>
+        <h1>Shopping</h1>
+    </div>
+    <div class="container">
+            <label>
+                <b>Keywords<span style="color: red;">*</span>:</b>
+                <input type="text" name="keywords" id="keywords" required>
+            </label>
+
+            <label>
+                <b>Price Range:</b>&nbsp;
+                <span> From
+                    <input type="number" id="price_from" style="width: 50px;margin: 10px;">
+                    to
+                    <input type="number" id="price_to" style="width: 50px;margin: 10px;">
+                </span>
+            </label>
+            <div class="group">
+                Condition:
+                <span>
+                    <input type="checkbox" name="condition" id="condition_new" value="1000"> New
+                    <input type="checkbox" name="condition" id="condition_used" value="3000"> Used
+                    <input type="checkbox" name="condition" id="condition_very_good" value="4000"> Very Good
+                    <input type="checkbox" name="condition" id="condition_good" value="5000"> Good
+                    <input type="checkbox" name="condition" id="condition_acceptable" value="6000"> Acceptable
+                </span>
+            </div>
+
+            <label><b>Seller:</b>
+                <span>
+                    <input type="checkbox" name="seller" id="seller" value="Return Accepted"> Return Accepted
+                </span>
+            </label>
+
+            <div class="group"><b>Shipping:</b>
+                <span>
+                    <input type="checkbox" name="shipping" value="Free" id="free"> Free
+                    <input type="checkbox" name="shipping" value="Expedited" id="expedited"> Expedited
+                </span>
+            </div>
+
+            <label>
+                <b>Sort by:</b>
+                <select name="sort_by" id="sort_by" style="width: 230px;text-align: center;">
+                    <option value="BestMatch" selected><b>Best Match</b></option>
+                    <option value="CurrentPriceHighest"><b>Price: highest first</b></option>
+                    <option value="PricePlusShippingHighest"><b>Price + Shipping: highest first</b></option>
+                    <option value="PricePlusShippingLowest"><b>Price + Shipping: lowest first</b></option>
+                </select>
+            </label>
+            <div class="group" style="border: none;">
+                <button id="reset">Clear</button>
+                <button id="submitData">Search</button>
+            </div>
+    </div>
+    <div id="results"></div>
+    <button id="toggleView" style="display:none;">Show More</button>
+    <div id="itemDetail" style="display:none;">
+        <p>
+            Item Details
+        </p>
+        <button id="backButton">Back to search results</button>
+        <div class="itemDetailedContent"></div>
+    </div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="/static/js/scripts.js"></script>
+
+</html>
